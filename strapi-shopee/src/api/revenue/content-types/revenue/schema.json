@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "revenues",
+  "info": {
+    "singularName": "revenue",
+    "pluralName": "revenues",
+    "displayName": "Revenue"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "revenue": {
+      "type": "decimal"
+    }
+  }
+}

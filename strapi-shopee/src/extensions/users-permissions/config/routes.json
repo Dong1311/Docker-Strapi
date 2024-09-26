@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/auth/forgot-password",
+      "handler": "Auth.forgotPassword",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/connect/:provider",
+      "handler": "Auth.connect",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

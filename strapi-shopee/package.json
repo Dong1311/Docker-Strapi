@@ -1,0 +1,46 @@
+{
+  "name": "strapi-shopee",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "deploy": "strapi deploy"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.7.26"
+  },
+  "dependencies": {
+    "@strapi/plugin-cloud": "4.25.11",
+    "@strapi/plugin-email": "^4.25.11",
+    "@strapi/plugin-i18n": "^4.25.11",
+    "@strapi/plugin-users-permissions": "^4.25.11",
+    "@strapi/provider-email-nodemailer": "^4.25.11",
+    "@strapi/provider-email-sendgrid": "^5.0.0",
+    "@strapi/provider-email-sendmail": "^4.25.11",
+    "@strapi/strapi": "^4.25.11",
+    "better-sqlite3": "8.6.0",
+    "nodemailer": "^6.9.15",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "5.3.4",
+    "strapi-provider-email-sendgrid": "^3.6.11",
+    "strapi-utils": "^3.6.11",
+    "styled-components": "5.3.3",
+    "assert": "^2.0.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "1267ca3f-3aef-4361-9713-2b1ba1448fb4"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
