@@ -1,0 +1,33 @@
+services:
+  frontend:
+    build:
+      context: ./store
+    container_name: react_frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: ./strapi-shopee
+    container_name: strapi_backend
+    ports:
+      - "1337:1337"
+    volumes:
+      - ./strapi-shopee:/usr/src/app
+    environment:
+      - APP_KEYS=${APP_KEYS}
+      - API_TOKEN_SALT=${API_TOKEN_SALT}
+      - ADMIN_JWT_SECRET=${ADMIN_JWT_SECRET}
+      - DATABASE_CLIENT=${DATABASE_CLIENT}
+      - DATABASE_FILENAME=${DATABASE_FILENAME}
+      - JWT_SECRET=${JWT_SECRET}
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
